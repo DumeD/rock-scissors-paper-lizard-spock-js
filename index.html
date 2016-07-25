@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rock, Scissors, Paper, Lizard, Spock</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/imagehover.min.css">
+    <script>
+
+    </script>
+  </head>
+  <body>
+    <h1 class="text-center">Rock, Scissors, Paper, Lizard, Spock game against computer.</h1>
+
+    <form id="myForm" class="text-center"><div class="points col-xs-12 text-center"><span id="userPoints"></span>/<span id="compPoints"></span></div>
+      Please insert your name: <input type="text" id="myName">
+      <input type="button" onclick="pickName()" value="Submit">
+    </form>
+
+    <div class="container-fluid row-centered">
+      <div class="text-center images">
+        <figure class="opacity"><div class="col-md-4" id="top-images"><img src="images/rock.jpg" alt="" class="img-responsive" onclick="rock()"></div></figure>
+          <figure class="opacity"><div class="col-md-4" id="top-images"><img src="images/scissors.jpg" alt="" class="img-responsive" onclick="scissors()"></div></figure>
+          <figure class="opacity"><div class="col-md-4" id="top-images"><img src="images/paper.jpg" alt="" class="img-responsive" onclick="paper()"></div></figure>
+          <figure class="opacity"><div class="col-md-6 col-lg-6" id="bottom-images"><img src="images/lizard.jpg" alt="" class="img-responsive" onclick="lizard()"></div></figure>
+          <figure class="opacity"><div class="col-md-6 col-lg-6" id="bottom-images"><img src="images/spock.jpg" alt="" class="img-responsive" onclick="spock()"></div></figure>
+      </div>
+    </div>
+    <div class="text-center">
+      <h1>The computer chooses: <span id="compChoice"></span></h1>
+      <span id="result"></span>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

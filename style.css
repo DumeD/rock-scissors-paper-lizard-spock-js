@@ -1,0 +1,23 @@
+img {
+  margin: 0 auto;
+}
+#top-images {
+  padding-top: 30px;
+}
+
+#bottom-images {
+  padding-top: 20px;
+}
+.points {
+  float: right;
+  margin-right: 40px;
+}
+
+figure img {
+  opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+figure:hover img {
+  opacity: .5;
+}
